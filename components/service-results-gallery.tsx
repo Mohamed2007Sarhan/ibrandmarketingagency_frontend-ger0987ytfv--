@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useMemo, useRef, useState } from "react"
+import { useEffect, useMemo, useRef, useState, useCallback } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import Image from "next/image"
 import { useTheme } from "@/hooks/use-theme"
@@ -167,8 +167,8 @@ export default function ServiceResultsGallery({ serviceId, variant = "service", 
     }
   }, [items, index])
 
-  const goPrev = () => setIndex((prev) => (items.length ? (prev - 1 + items.length) % items.length : 0))
-  const goNext = () => setIndex((prev) => (items.length ? (prev + 1) % items.length : 0))
+  const goPrev = useCallback(() => setIndex((prev) => (items.length ? (prev - 1 + items.length) % items.length : 0)), [items.length])
+  const goNext = useCallback(() => setIndex((prev) => (items.length ? (prev + 1) % items.length : 0)), [items.length])
 
   // Keyboard navigation
   useEffect(() => {
@@ -178,7 +178,7 @@ export default function ServiceResultsGallery({ serviceId, variant = "service", 
     }
     window.addEventListener("keydown", onKey)
     return () => window.removeEventListener("keydown", onKey)
-  }, [items.length])
+  }, [items.length, goNext, goPrev])
 
   // Auto play
   useEffect(() => {

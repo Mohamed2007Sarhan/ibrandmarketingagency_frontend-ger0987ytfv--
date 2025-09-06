@@ -32,55 +32,54 @@ interface CompanyGalleryProps {
 // Company name mapping
 const getCompanyName = (sectionTitle: string): string => {
   const section = sectionTitle.toLowerCase()
-  if (section.includes("ابو سعد") || section.includes("أبو سعد") || section.includes("بو سعد")) return "Abu Saad Company for Export and International Transport"
-  if (section.includes("الإنجاز المعتمد")) return "Al-Injaz Al-Mu'tamad Company"
-  if (section.includes("العلا") || section.includes("al ola") || section.includes("el-ola") || section.includes("al-ola")) return "Al-Ola Export and International Transport Company"
+  if (section.includes("ابو سعد") || section.includes("أبو سعد") || section.includes("بو سعد")) return "Abu Saad Export and International Transport Company"
+  if (section.includes("الإنجاز المعتمد") || section.includes("النجاز المعتمد")) return "Al-Injaz Al-Mu'tamad Company"
+  if (section.includes("العلا") || section.includes("al ola") || section.includes("el-ola") || section.includes("al-ola")) return "Al-Ola Export and International Transport Office"
   if (section.includes("رضوان") || section.includes("radwan")) return "Radwan Furniture Factory"
   if (section.includes("تيستي") || section.includes("tasty")) return "Tasty Restaurant"
-  if (section.includes("كينج وود") || section.includes("king wood")) return "King Wood Factory for Wood Supply"
+  if (section.includes("كينج وود") || section.includes("king wood")) return "King Wood Factory"
   if (section.includes("هاي براند") || section.includes("high brand")) return "High Brand Clothing Factory"
-  if (section.includes("الاخوة المتحدون") || section.includes("united brothers")) return "United Brothers Kitchen Factory"
+  if (section.includes("الاخوة المتحدون") || section.includes("united brothers")) return "United Brothers Factory"
   if (section.includes("اتقان المريد") || section.includes("perfection seeking")) return "Itqan Al-Mureed Academy"
-  if (section.includes("مكة") || section.includes("makkah")) return "Makkah Kitchens Factory "
+  if (section.includes("مكة") || section.includes("makkah")) return "Makkah Factory"
   if (section.includes("ترحال") || section.includes("travel") || section.includes("tr7al")) return "Tr7al Travel Company"
-  if (section.includes("عسل") || section.includes("honey")) return "Asal Real Estate Company"
+  if (section.includes("عسل") || section.includes("honey")) return "Asal Group Company"
   if (section.includes("الحبشي") || section.includes("habashy") || section.includes("el-habashy")) return "El-Habashy Furniture Factory"
-  if (section.includes("اسنان") || section.includes("dental") || section.includes("dent")) return "MasterDent Center clinic"
-  if (section.includes("الجزار") || section.includes("butcher")) return "El-Gazzar Steel Company"
-  if (section.includes("ابن الاسطى") || section.includes("craftsman")) return "Ibn El-Sasty Car Service Center"
-  if (section.includes("الوكيل") || section.includes("agent")) return "El-Wakeel Car Service Center"
+  if (section.includes("اسنان") || section.includes("dental") || section.includes("dent")) return "Master Dental Center"
+  if (section.includes("الجزار") || section.includes("butcher")) return "El-Gazzar Steel Trading and Supply Company"
+  if (section.includes("ابن الاسطى") || section.includes("craftsman")) return "Ibn El-Sasty Service Center"
+  if (section.includes("الوكيل") || section.includes("agent")) return "El-Wakeel Service Center"
   if (section.includes("بداية مشوارك") || section.includes("journey")) return "Bidaya Mushwarak Academy"
-  if (section.includes("كشخة الزين") || section.includes("beauty")) return "Kashkha Al-Zain store"
-  if (section.includes("ماستر") || section.includes("master")) return "MasterDent Center clinic"
-  if (section.includes("ووديكس") || section.includes("woodex")) return "Woodex Factory for Kitchens and Wood Supplies"
+  if (section.includes("كشخة الزين") || section.includes("beauty")) return "Kashkha Al-Zain Store"
+  if (section.includes("ماستر") || section.includes("master")) return "Master Dental Center"
+  if (section.includes("ووديكس") || section.includes("woodex")) return "Woodex Factory"
   if (section.includes("i brand") || section.includes("ibrand")) return "i Brand Marketing Agency"
   return sectionTitle
 }
 
 const getCompanyNameAr = (sectionTitle: string): string => {
   const section = sectionTitle.toLowerCase()
+  if (section.includes("ابن الاسطى") || section.includes("craftsman")) return "مركز ابن السطي"
+  if (section.includes("الجزار") || section.includes("butcher")) return "شركة الجزار ستيل للتجارة والتوريدات"
+  if (section.includes("الحبشي") || section.includes("habashy") || section.includes("el-habashy")) return "مصنع الحبشي للأثاث"
+  if (section.includes("الإنجاز المعتمد") || section.includes("النجاز المعتمد")) return "شركة الإنجاز المعتمد"
+  if (section.includes("الوكيل") || section.includes("agent")) return "مركز الوكيل"
+  if (section.includes("بداية مشوارك") || section.includes("journey")) return "أكاديمية بداية مشوارك"
+  if (section.includes("ترحال") || section.includes("travel") || section.includes("tr7al")) return "شركة ترحال للسفريات"
+  if (section.includes("عسل") || section.includes("honey")) return "شركة عسل جروب"
+  if (section.includes("كشخة الزين") || section.includes("beauty")) return "كشخة الزين"
+  if (section.includes("كينج وود") || section.includes("king wood")) return "مصنع كينج وود"
+  if (section.includes("ماستر") || section.includes("master") || section.includes("اسنان") || section.includes("dental")) return "مركز ماستر دنتل"
+  if (section.includes("مكة") || section.includes("makkah")) return "مصنع مكة"
+  if (section.includes("ووديكس") || section.includes("woodex")) return "مصنع وودكس"
   if (section.includes("ابو سعد") || section.includes("أبو سعد") || section.includes("بو سعد")) return "شركة أبو سعد للتصدير والنقل الدولي"
-  if (section.includes("الإنجاز المعتمد")) return "شركة الإنجاز المعتمد لخدمات الأعمال"
-  if (section.includes("العلا") || section.includes("al ola") || section.includes("el-ola") || section.includes("al-ola")) return "شركة العلا للتصدير والنقل الدولي"
-  if (section.includes("رضوان") || section.includes("radwan")) return "مصنع رضوان للأثاث "
+  if (section.includes("اتقان المريد") || section.includes("perfection seeking")) return "أكاديمية إتقان المريد"
+  if (section.includes("الاخوة المتحدون") || section.includes("united brothers")) return "مصنع الإخوة المتحدون"
+  if (section.includes("العلا") || section.includes("al ola") || section.includes("al-ola") || section.includes("el-ola")) return "مكتب العلا للتصدير والنقل الدولي"
   if (section.includes("تيستي") || section.includes("tasty")) return "مطعم تيستي"
-  if (section.includes("كينج وود")) return "مصنع كينج وود لتوريد الأخشاب"
-  if (section.includes("هاي براند")) return "مصنع هاي براند للملابس"
-  if (section.includes("الاخوة المتحدون")) return "مصنع الإخوة المتحدون للمطابخ"
-  if (section.includes("اتقان المريد")) return "أكاديمية إتقان المريد"
-  if (section.includes("مكة")) return "  مصنع مكة للمطابخ -"
-  if (section.includes("ترحال") || section.includes("travel") || section.includes("tr7al")) return "شركة ترحال للسفر"
-  if (section.includes("عسل")) return "شركة عسل للتسويق العقاري"
-  if (section.includes("الحبشي") || section.includes("habashy")) return "مصنع الحبشي للأثاث"
-  if (section.includes("اسنان") || section.includes("dental")) return "عيادة ماستر دنت"
-  if (section.includes("الجزار")) return "شركة الجزار ستيل"
-  if (section.includes("ابن الاسطى")) return "مركز ابن السطي لخدمات السيارات"
-  if (section.includes("الوكيل")) return "مركز الوكيل لخدمات السيارات"
-  if (section.includes("بداية مشوارك")) return "أكاديمية بداية مشوارك"
-  if (section.includes("كشخة الزين")) return "محل كشخة الزين"
-  if (section.includes("ماستر")) return "عيادة ماستر دنت"
-  if (section.includes("ووديكس")) return "مصنع ووديكس للمطابخ وتوريدات الأخشاب"
-  if (section.includes("i brand")) return "وكالة iBrand للتسويق"
+  if (section.includes("رضوان") || section.includes("radwan")) return "مصنع رضوان للأثاث"
+  if (section.includes("هاي براند") || section.includes("high brand")) return "مصنع هاي براند للملابس"
+  if (section.includes("i brand") || section.includes("ibrand")) return "وكالة iBrand للتسويق"
   return sectionTitle
 }
 
@@ -88,221 +87,155 @@ const getCompanyNameAr = (sectionTitle: string): string => {
 
 const getCompanyDescription = (sectionTitle: string): string => {
   const section = sectionTitle.toLowerCase()
-  // Graphic Design adjustments
-  if (section.includes("ابو سعد") || section.includes("أبو سعد") || section.includes("بو سعد")) {
-    return "Furniture brand offering a range of home furniture and interior pieces."
-  }
-  if (section.includes("الاخوة المتحدون") || section.includes("الإخوة المتحدون") || section.includes("united brothers")) {
-    return "Kitchen preparation and installation services for residential and commercial spaces."
-  }
-  if (section.includes("اتقان المريد") || section.includes("mureed") || section.includes("quran")) {
-    return "Quran memorization and Tajweed education center with structured learning programs."
-  }
-  if (section.includes("مطبخ") || section.includes("مطابخ") || section.includes("kitchen")) {
-    return "Professional kitchen preparation and installation services for homes and businesses."
-  }
-  if (section.includes("الإنجاز المعتمد")) {
-    return "Travel and tourism services including trip planning and visa assistance."
-  }
-  if (section.includes("الجزار")) {
-    return "Iron and steel fabrication, repair, and metal works services."
-  }
-  if (section.includes("العلا") || section.includes("al ola") || section.includes("al-ola") || section.includes("el-ola")) {
-    return "Travel, international transport, and export logistics solutions."
-  }
-  if (section.includes("خشب") || section.includes("wooden")) {
-    return "Wooden furniture manufacturing with high-quality craftsmanship."
-  }
-  if (section.includes("ملابس") || section.includes("clothes") || section.includes("apparel")) {
-    return "Clothing and apparel brand offering stylish collections."
-  }
-  if (section.includes("تيستي") || section.includes("tasty")) {
-    return "Food services and culinary products brand."
-  }
-  if (section.includes("رضوان") || section.includes("radwan")) {
-    return "Wooden furniture and carpentry craftsmanship."
-  }
-  if (section.includes("كينج وود") || section.includes("king wood")) {
-    return "Premium furniture company specializing in luxury home furnishings and interior design solutions."
-  }
-  if (section.includes("هاي براند") || section.includes("high brand")) {
-    return "Luxury fashion brand offering high-end clothing and accessories for discerning customers."
-  }
-  if (section.includes("الاخوة المتحدون") || section.includes("united brothers")) {
-    return "Traditional food company providing authentic local cuisine and packaged food products."
-  }
-  if (section.includes("اتقان المريد") || section.includes("perfection seeking")) {
-    return "Educational platform offering professional development courses and certification programs."
-  }
-  if (section.includes("مكة") || section.includes("makkah")) {
-    return "Tourism services company specializing in Hajj and Umrah travel arrangements."
-  }
-  if (section.includes("ترحال") || section.includes("travel") || section.includes("tr7al")) {
-    return "Travel and mobility solutions under the brand tr7al."
-  }
-  if (section.includes("عسل") || section.includes("honey")) {
-    return "Real estate marketing company specializing in property promotion and lead generation."
+  
+  if (section.includes("ابن الاسطى") || section.includes("craftsman")) {
+    return "Comprehensive automotive service center specializing in car maintenance and repair including electrical systems, suspension, mechanics, and computer diagnostics."
   }
   if (section.includes("الجزار") || section.includes("butcher")) {
-    return "Traditional butcher shop providing fresh meat and poultry products."
+    return "Specialized company in trading and supplying all types of iron and construction materials, building supplies, and metal coverings."
   }
-  if (section.includes("ابن الاسطى") || section.includes("craftsman")) {
-    return "Artisan workshop specializing in traditional crafts and handmade products."
+  if (section.includes("الحبشي") || section.includes("habashy") || section.includes("el-habashy")) {
+    return "Factory specialized in manufacturing and producing classic and modern furniture including bedrooms, living rooms, and travel sets."
   }
-  if (section.includes("الإنجاز المعتمد")) {
-    return "Certified services company offering professional and accredited solutions."
+  if (section.includes("الإنجاز المعتمد") || section.includes("النجاز المعتمد")) {
+    return "Business services company specialized in company establishment, government and commercial transaction clearance, and license renewal in Dubai."
   }
   if (section.includes("الوكيل") || section.includes("agent")) {
-    return "Professional agency providing comprehensive business and service solutions."
+    return "Maintenance center specialized in repairing car headlights and maintaining glass cracks with high efficiency."
   }
   if (section.includes("بداية مشوارك") || section.includes("journey")) {
-    return "Career development platform helping professionals start their journey to success."
+    return "Educational academy and nursery for caring and qualifying children with special needs and learning difficulties through specialized courses and psychological support services."
+  }
+  if (section.includes("ترحال") || section.includes("travel") || section.includes("tr7al")) {
+    return "Tourism company specialized in organizing and managing domestic trips and local tourism (coastal cities, Cairo, Upper Egypt, safari and adventure trips)."
+  }
+  if (section.includes("عسل") || section.includes("honey")) {
+    return "Real estate marketing company specialized in selling and marketing residential, commercial, and administrative units in addition to real estate consultations."
   }
   if (section.includes("كشخة الزين") || section.includes("beauty")) {
-    return "Beauty salon offering comprehensive beauty and wellness services."
+    return "Store specialized in women's clothing imported from the UAE including Gulf abayas, dresses, casual wear, shoes, bags, and accessories."
   }
-  if (section.includes("ماستر") || section.includes("master")) {
-    return "Master services company providing expert solutions across various industries."
+  if (section.includes("كينج وود") || section.includes("king wood")) {
+    return "Factory for producing and manufacturing high-quality plywood boards with multiple sizes and thicknesses to meet the needs of furniture factories and workshops."
+  }
+  if (section.includes("ماستر") || section.includes("master") || section.includes("اسنان") || section.includes("dental")) {
+    return "Comprehensive medical center for dental and gum care including teeth cleaning, fillings, root canal treatment, dental implants, and orthodontics."
+  }
+  if (section.includes("مكة") || section.includes("makkah")) {
+    return "Factory for designing and implementing complete aluminum kitchens in various forms (classic - modern - high gloss) with all accessories."
   }
   if (section.includes("ووديكس") || section.includes("woodex")) {
-    return "Furniture company specializing in modern and contemporary furniture designs."
+    return "Factory specialized in manufacturing and supplying kitchen materials and supplies including wood and aluminum boards, CNC cutting, and accessories."
+  }
+  if (section.includes("ابو سعد") || section.includes("أبو سعد") || section.includes("بو سعد")) {
+    return "Company specialized in transport, shipping, and international export services from Egypt to Saudi Arabia, UAE, and Libya including import, customs clearance, and packaging."
+  }
+  if (section.includes("اتقان المريد") || section.includes("perfection seeking")) {
+    return "Educational academy specialized in Islamic religious sciences (Quran, Hadith, Fiqh, Aqeedah, Tafsir) with online distance learning programs."
+  }
+  if (section.includes("الاخوة المتحدون") || section.includes("الإخوة المتحدون") || section.includes("united brothers")) {
+    return "Factory specialized in manufacturing all types of kitchens (aluminum, PVC, sink units, libraries, dressing rooms, hoods) with high quality."
+  }
+  if (section.includes("العلا") || section.includes("al ola") || section.includes("al-ola") || section.includes("el-ola")) {
+    return "Office specialized in shipping and international export services from Egypt to Saudi Arabia and UAE with all required SABER certificates."
+  }
+  if (section.includes("تيستي") || section.includes("tasty")) {
+    return "Restaurant specialized in serving various types of pizza in addition to high-quality fast food with comfortable indoor seating."
+  }
+  if (section.includes("رضوان") || section.includes("radwan")) {
+    return "Factory specialized in manufacturing home furniture from the finest types of wood including travel and reception chairs, tables, and large production lines for shipping."
+  }
+  if (section.includes("هاي براند") || section.includes("high brand")) {
+    return "Factory for designing and implementing ready-made clothing of all types (casual - classic - formal) with production of special fashion lines and wholesale supply."
   }
   if (section.includes("i brand") || section.includes("ibrand")) {
     return "Marketing agency providing comprehensive branding and digital marketing solutions."
-  }
-  if (section.includes("الحبشي") || section.includes("habashy") || section.includes("el-habashy")) {
-    return "Furniture brand offering distinctive home furniture collections."
-  }
-  if (section.includes("اسنان") || section.includes("dental") || section.includes("dent")) {
-    return "Advanced dental center offering comprehensive dental and cosmetic services."
   }
   return "Professional company offering high-quality services and solutions."
 }
 
 const getCompanyDescriptionAr = (sectionTitle: string): string => {
   const section = sectionTitle.toLowerCase()
-  // Graphic Design adjustments (Arabic)
-  if (section.includes("ابو سعد") || section.includes("أبو سعد") || section.includes("بو سعد")) {
-    return "    تصدير ونقل دولي من مصر إلي ليبيا – الإمارات العربية المتحدة – السعودية      "
+  
+  if (section.includes("ابن الاسطى") || section.includes("craftsman")) {
+    return "مركز متكامل لصيانة وإصلاح السيارات يشمل كهرباء السيارات، العفشة، الميكانيكا، وكشف الأعطال بالكمبيوتر"
   }
-  if (section.includes("الاخوة المتحدون") || section.includes("الإخوة المتحدون") || section.includes("united brothers")) {
-    return "خدمات تجهيز وتركيب المطابخ للمنازل والأنشطة التجارية."
-  }
-  if (section.includes("اتقان المريد") || section.includes("mureed") || section.includes("quran")) {
-    return "أكاديمية تعليمية لعلوم الشرع الإسلامي وتحفيظ القرآن"
-  }
-  if (section.includes("مطبخ") || section.includes("مطابخ") || section.includes("kitchen")) {
-    return "خدمات تجهيز وتركيب المطابخ للمنازل والأنشطة التجارية."
-  }
-  if (section.includes("الإنجاز المعتمد")) {
-    return "خدمات تخليص المعاملات وتأسيس الشركات  "
-  }
-  if (section.includes("الجزار")) {
-    return "خدمات توريد الحديد والصلب والتصنيع والإصلاحات المعدنية."
-  }
-  if (section.includes("العلا") || section.includes("al ola") || section.includes("al-ola") || section.includes("el-ola")) {
-    return "خدمات السفر والنقل الدولي والتصدير بحلول لوجستية متكاملة."
-  }
-  if (section.includes("خشب") || section.includes("wooden")) {
-    return "تصنيع أثاث خشبي بجودة عالية وحرفية مميزة."
-  }
-  if (section.includes("ملابس") || section.includes("clothes") || section.includes("apparel")) {
-    return "علامة ملابس تقدم تشكيلات أنيقة وعصرية."
-  }
-  if (section.includes("تيستي") || section.includes("tasty")) {
-    return "علامة متخصصة في خدمات الطعام والمنتجات الغذائية."
-  }
-  if (section.includes("رضوان") || section.includes("radwan")) {
-    return "أثاث خشبي وحرف نجارة متميزة."
-  }
-  if (section.includes("كينج وود")) {
-    return "مصنع أثاث متخصص في أثاث المنازل الفاخر وحلول التصميم الداخلي."
-  }
-  if (section.includes("هاي براند")) {
-    return "مصنع ملابس فاخرة تقدم ملابس وإكسسوارات عالية الجودة للعملاء المميزين."
-  }
-  if (section.includes("الاخوة المتحدون")) {
-    return "مصنع مطابخ خشب وألومنيوم وتند  وأبواب وشبابيك "
-  }
-  if (section.includes("اتقان المريد")) {
-    return "منصة تعليمية تقدم دورات التطوير المهني وبرامج الشهادات المعتمدة."
-  }
-  if (section.includes("مكة")) {
-    return "تصميم وتنفيذ مطابخ ألومنيوم كاملة حسب الطلب."
-  }
-  if (section.includes("ترحال") || section.includes("travel") || section.includes("tr7al")) {
-    return "شركة سياحة داخلية تقدم خدمات السفر والنقل الدولي والتصدير بحلول لوجستية متكاملة."
-  }
-  if (section.includes("عسل") || section.includes("honey")) {
-    return "شركة تسويق عقاري متخصصة في ترويج العقارات وتوليد العملاء."
-  }
-  if (section.includes("الجزار")) {
-    return " لتجارة جميع أنواع الحديد والصلب والتصنيع والإصلاحات المعدنية."
-  }
-  if (section.includes("ابن الاسطى")) {
-    return "مركز صيانة السيارات ميكانيكا وكهرباء وعفشة"
-  }
-  if (section.includes("الإنجاز المعتمد")) {
-    return "شركة  تخليص المعامالت وتأسيس شركات "
-  }
-  if (section.includes("الوكيل")) {
-    return " مركز لصيانة فوانيس وزجاج السيارا ت "
-  }
-  if (section.includes("بداية مشوارك")) {
-    return "منصة تطوير مهني تساعد المحترفين في بداية رحلتهم نحو النجاح."
-  }
-  if (section.includes("كشخة الزين")) {
-    return "محل ملابس وتسويق الأزياء المستوردة من الإمارات ومصر"
-  }
-  if (section.includes("ماستر")) {
-    return "عيادة طبية متكاملة لطب الفم والأسنان وأمراض اللثة"
-  }
-  if (section.includes("ووديكس")) {
-    return "تصنيع أو توريد خامات ومستلزمات خاصة بالمطابخ وتجاليد الحوائط"
-  }
-  if (section.includes("i brand")) {
-    return "وكالة تسويق تقدم حلول شاملة للعلامات التجارية والتسويق الرقمي."
+  if (section.includes("الجزار") || section.includes("butcher")) {
+    return "شركة متخصصة في تجارة وتوريد جميع أنواع الحديد ومستلزمات البناء والتشييد والتغطيات المعدنية"
   }
   if (section.includes("الحبشي") || section.includes("habashy") || section.includes("el-habashy")) {
-    return "مصنع أثاث كلاسيك ومودرن يقدم مجموعات مميزة لأثاث المنازل."
+    return "مصنع متخصص في تصنيع وإنتاج الأثاث الكلاسيكي والمودرن بما يشمل غرف النوم، الصالونات، وغرف السفر"
   }
-  if (section.includes("اسنان") || section.includes("dental") || section.includes("dent")) {
-    return "عيادة طبية متكاملة لطب الفم والأسنان وأمراض اللثة"
+  if (section.includes("الإنجاز المعتمد") || section.includes("النجاز المعتمد")) {
+    return "شركة خدمات أعمال متخصصة في تأسيس الشركات وتخليص المعاملات الحكومية والتجارية وتجديد الرخص في دبي"
   }
-  return "شركة احترافية تقدم خدمات وحلول عالية الجودة."
+  if (section.includes("الوكيل") || section.includes("agent")) {
+    return "مركز صيانة متخصص في إصلاح فوانيس السيارات وصيانة شروخ الزجاج بكفاءة عالية"
+  }
+  if (section.includes("بداية مشوارك") || section.includes("journey")) {
+    return "حضانة وأكاديمية تعليمية لرعاية وتأهيل الأطفال ذوي الهمم وصعوبات التعلم من خلال كورسات متخصصة وخدمات دعم نفسي"
+  }
+  if (section.includes("ترحال") || section.includes("travel") || section.includes("tr7al")) {
+    return "شركة سياحة متخصصة في تنظيم وإدارة الرحلات الداخلية والسياحة المحلية (مدن ساحلية، القاهرة، الصعيد، رحلات سفاري ومغامرات)"
+  }
+  if (section.includes("عسل") || section.includes("honey")) {
+    return "شركة تسويق عقاري متخصصة في بيع وتسويق الوحدات السكنية والتجارية والإدارية بالإضافة إلى الاستشارات العقارية"
+  }
+  if (section.includes("كشخة الزين") || section.includes("beauty")) {
+    return "محل متخصص في الملابس الحريمي المستوردة من الإمارات بما يشمل العبايات الخليجية، الفساتين، الكاجوال، الأحذية والشنط والإكسسوارات"
+  }
+  if (section.includes("كينج وود") || section.includes("king wood")) {
+    return "مصنع لإنتاج وصناعة ألواح الكونتر بجودة عالية مع توفير مقاسات وسماكات متعددة لتلبية احتياجات المصانع وورش الأثاث"
+  }
+  if (section.includes("ماستر") || section.includes("master") || section.includes("اسنان") || section.includes("dental")) {
+    return "مركز طبي متكامل لرعاية وعلاج الأسنان واللثة يشمل تنظيف الأسنان، الحشوات، علاج العصب، زراعة الأسنان، والتقويم"
+  }
+  if (section.includes("مكة") || section.includes("makkah")) {
+    return "مصنع لتصميم وتنفيذ المطابخ الألومنيوم الكاملة بمختلف الأشكال (كلاسيك – مودرن – هاي جلوس) مع تزويدها بجميع الإكسسوارات"
+  }
+  if (section.includes("ووديكس") || section.includes("woodex")) {
+    return "مصنع متخصص في تصنيع وتوريد خامات ومستلزمات المطابخ بما يشمل ألواح الخشب والألومنيوم، القطع باستخدام CNC، والإكسسوارات"
+  }
+  if (section.includes("ابو سعد") || section.includes("أبو سعد") || section.includes("بو سعد")) {
+    return "شركة متخصصة في خدمات النقل والشحن والتصدير الدولي من مصر إلى السعودية والإمارات وليبيا بما يشمل الاستيراد والتخليص الجمركي والتغليف"
+  }
+  if (section.includes("اتقان المريد") || section.includes("perfection seeking")) {
+    return "أكاديمية تعليمية متخصصة في علوم الشرع الإسلامي (القرآن الكريم، الحديث الشريف، الفقه، العقيدة، التفسير) مع برامج أونلاين للتعلم عن بعد"
+  }
+  if (section.includes("الاخوة المتحدون") || section.includes("الإخوة المتحدون") || section.includes("united brothers")) {
+    return "مصنع متخصص في تصنيع المطابخ بجميع أنواعها (ألومنيوم، PVC، وحدات حوض، مكتبات، دريسنج روم، تند) بجودة عالية"
+  }
+  if (section.includes("العلا") || section.includes("al ola") || section.includes("al-ola") || section.includes("el-ola")) {
+    return "مكتب متخصص في خدمات الشحن والتصدير الدولي من مصر إلى السعودية والإمارات مع توفير جميع شهادات سابر المطلوبة"
+  }
+  if (section.includes("تيستي") || section.includes("tasty")) {
+    return "مطعم متخصص في تقديم البيتزا بأنواعها المختلفة بالإضافة إلى الوجبات السريعة عالية الجودة مع جلسات داخلية مريحة"
+  }
+  if (section.includes("رضوان") || section.includes("radwan")) {
+    return "مصنع متخصص في تصنيع الأثاث المنزلي من أجود أنواع الخشب بما يشمل كراسي السفر والاستقبال، الترابيزات، وخطوط إنتاج كبيرة للشحن"
+  }
+  if (section.includes("هاي براند") || section.includes("high brand")) {
+    return "مصنع لتصميم وتنفيذ الملابس الجاهزة بجميع أنواعها (كاجوال – كلاسيك – فورمال) مع إنتاج خطوط أزياء خاصة وتوريد بالجملة"
+  }
+  if (section.includes("i brand") || section.includes("ibrand")) {
+    return "وكالة تسويق تقدم حلول شاملة للعلامات التجارية والتسويق الرقمي"
+  }
+  return "شركة احترافية تقدم خدمات وحلول عالية الجودة"
 }
 
 const getCompanyStats = (sectionTitle: string) => {
   const section = sectionTitle.toLowerCase()
 
-  if (section.includes("كينج وود") || section.includes("king wood")) {
-    return { projects: 150, clients: 80, experience: "8+ Years", location: "Damietta, Egypt" }
-  }
-  if (section.includes("هاي براند") || section.includes("high brand")) {
-    return { projects: 200, clients: 120, experience: "5+ Years", location: "Damietta, Egypt" }
-  }
-  if (section.includes("الاخوة المتحدون") || section.includes("united brothers")) {
-    return { projects: 80, clients: 45, experience: "12+ Years", location: "Dakahlia, Egypt" }
-  }
-  if (section.includes("اتقان المريد") || section.includes("perfection seeking")) {
-    return { projects: 300, clients: 200, experience: "6+ Years", location: "Baghdad, Iraq" }
-  }
-  if (section.includes("مكة") || section.includes("makkah")) {
-    return { projects: 500, clients: 300, experience: "15+ Years", location: "Dakahlia, Egypt" }
-  }
-  if (section.includes("ترحال") || section.includes("travel")) {
-    return { projects: 250, clients: 180, experience: "10+ Years", location: "Cairo, Egypt" }
-  }
-  if (section.includes("عسل") || section.includes("honey")) {
-    return { projects: 60, clients: 35, experience: "20+ Years", location: "Damietta, Egypt" }
+  if (section.includes("ابن الاسطى") || section.includes("craftsman")) {
+    return { projects: 100, clients: 60, experience: "30+ Years", location: "Dakahlia, Egypt" }
   }
   if (section.includes("الجزار") || section.includes("butcher")) {
     return { projects: 40, clients: 25, experience: "25+ Years", location: "Qalyubia, Egypt" }
   }
-  if (section.includes("ابن الاسطى") || section.includes("craftsman")) {
-    return { projects: 100, clients: 60, experience: "30+ Years", location: "Dakahlia, Egypt" }
+  if (section.includes("الحبشي") || section.includes("habashy")) {
+    return { projects: 110, clients: 70, experience: "9+ Years", location: "Damietta, Egypt" }
   }
-  if (section.includes("الانجاز المعتمد") || section.includes("certified")) {
+  if (section.includes("الإنجاز المعتمد") || section.includes("النجاز المعتمد")) {
     return { projects: 180, clients: 95, experience: "7+ Years", location: "Dubai, UAE" }
   }
   if (section.includes("الوكيل") || section.includes("agent")) {
@@ -311,35 +244,50 @@ const getCompanyStats = (sectionTitle: string) => {
   if (section.includes("بداية مشوارك") || section.includes("journey")) {
     return { projects: 400, clients: 250, experience: "4+ Years", location: "Assiut, Egypt" }
   }
+  if (section.includes("ترحال") || section.includes("travel")) {
+    return { projects: 250, clients: 180, experience: "10+ Years", location: "Cairo (Maadi), Egypt" }
+  }
+  if (section.includes("عسل") || section.includes("honey")) {
+    return { projects: 60, clients: 35, experience: "20+ Years", location: "Damietta, Egypt" }
+  }
   if (section.includes("كشخة الزين") || section.includes("beauty")) {
     return { projects: 90, clients: 55, experience: "8+ Years", location: "Casablanca, Morocco" }
   }
-  if (section.includes("ماستر") || section.includes("master")) {
+  if (section.includes("كينج وود") || section.includes("king wood")) {
+    return { projects: 150, clients: 80, experience: "8+ Years", location: "Damietta, Egypt" }
+  }
+  if (section.includes("ماستر") || section.includes("master") || section.includes("اسنان") || section.includes("dental")) {
     return { projects: 220, clients: 140, experience: "11+ Years", location: "Damietta, Egypt" }
+  }
+  if (section.includes("مكة") || section.includes("makkah")) {
+    return { projects: 500, clients: 300, experience: "15+ Years", location: "Dakahlia, Egypt" }
   }
   if (section.includes("ووديكس") || section.includes("woodex")) {
     return { projects: 130, clients: 85, experience: "6+ Years", location: "Damietta, Egypt" }
   }
-  if (section.includes("i brand") || section.includes("ibrand")) {
-    return { projects: 350, clients: 200, experience: "3+ Years", location: "Damietta, Egypt" }
-  }
   if (section.includes("ابو سعد") || section.includes("أبو سعد")) {
-    return { projects: 280, clients: 150, experience: "12+ Years", location: "Misrata, Libya / Damietta, Egypt" }
+    return { projects: 280, clients: 150, experience: "12+ Years", location: "Damietta, Egypt / Misrata, Libya" }
+  }
+  if (section.includes("اتقان المريد") || section.includes("perfection seeking")) {
+    return { projects: 300, clients: 200, experience: "6+ Years", location: "Baghdad, Iraq" }
+  }
+  if (section.includes("الاخوة المتحدون") || section.includes("united brothers")) {
+    return { projects: 80, clients: 45, experience: "12+ Years", location: "Dakahlia, Egypt" }
   }
   if (section.includes("العلا") || section.includes("al ola")) {
     return { projects: 320, clients: 180, experience: "14+ Years", location: "Riyadh, Saudi Arabia" }
   }
-  if (section.includes("رضوان") || section.includes("radwan")) {
-    return { projects: 95, clients: 65, experience: "8+ Years", location: "Damietta, Egypt" }
-  }
   if (section.includes("تيستي") || section.includes("tasty")) {
     return { projects: 75, clients: 45, experience: "6+ Years", location: "Damietta, Egypt" }
   }
-  if (section.includes("الحبشي") || section.includes("habashy")) {
-    return { projects: 110, clients: 70, experience: "9+ Years", location: "Damietta, Egypt" }
+  if (section.includes("رضوان") || section.includes("radwan")) {
+    return { projects: 95, clients: 65, experience: "8+ Years", location: "Damietta, Egypt" }
   }
-  if (section.includes("اسنان") || section.includes("dental")) {
-    return { projects: 180, clients: 120, experience: "10+ Years", location: "Damietta, Egypt" }
+  if (section.includes("هاي براند") || section.includes("high brand")) {
+    return { projects: 200, clients: 120, experience: "5+ Years", location: "Damietta, Egypt" }
+  }
+  if (section.includes("i brand") || section.includes("ibrand")) {
+    return { projects: 350, clients: 200, experience: "3+ Years", location: "Damietta, Egypt" }
   }
 
   return { projects: 100, clients: 60, experience: "5+ Years", location: "Egypt" }
@@ -348,32 +296,23 @@ const getCompanyStats = (sectionTitle: string) => {
 const getCategory = (sectionTitle: string): string => {
   const section = sectionTitle.toLowerCase()
 
-  if (section.includes("ابو سعد") || section.includes("أبو سعد") || section.includes("بو سعد")) {
-    return "Export, Import & International Transport"
+  if (section.includes("ابن الاسطى") || section.includes("craftsman")) {
+    return "Automotive Services"
   }
-  if (section.includes("الانجاز المعتمد") || section.includes("الإنجاز المعتمد")) {
-    return "Transaction clearance"
+  if (section.includes("الجزار") || section.includes("butcher")) {
+    return "Steel Trading & Supply"
   }
-  if (section.includes("العلا") || section.includes("al ola") || section.includes("al-ola") || section.includes("el-ola")) {
-    return "Export & International Transport"
+  if (section.includes("الحبشي") || section.includes("habashy")) {
+    return "Furniture Manufacturing"
   }
-  if (section.includes("رضوان") || section.includes("radwan") || section.includes("الحبشي") || section.includes("habashy")) {
-    return "Furniture & Interior Design"
+  if (section.includes("الإنجاز المعتمد") || section.includes("النجاز المعتمد")) {
+    return "Business Services"
   }
-  if (section.includes("كينج وود") || section.includes("king wood") || section.includes("ووديكس") || section.includes("woodex")) {
-    return "Furniture & Interior Design"
+  if (section.includes("الوكيل") || section.includes("agent")) {
+    return "Automotive Services"
   }
-  if (section.includes("هاي براند") || section.includes("high brand")) {
-    return "Clothing & Fashion Manufacturing"
-  }
-  if (section.includes("كشخة الزين") || section.includes("beauty")) {
-    return "Fashion & Retail"
-  }
-  if (section.includes("الاخوة المتحدون") || section.includes("united brothers") || section.includes("مكة") || section.includes("makkah")) {
-    return "Kitchen Manufacturing & Design"
-  }
-  if (section.includes("اتقان المريد") || section.includes("perfection seeking") || section.includes("بداية مشوارك") || section.includes("journey")) {
-    return "Education & Training"
+  if (section.includes("بداية مشوارك") || section.includes("journey")) {
+    return "Special Education"
   }
   if (section.includes("ترحال") || section.includes("travel") || section.includes("tr7al")) {
     return "Tourism & Travel"
@@ -381,54 +320,68 @@ const getCategory = (sectionTitle: string): string => {
   if (section.includes("عسل") || section.includes("honey")) {
     return "Real Estate Marketing"
   }
-  if (section.includes("الجزار") || section.includes("butcher")) {
-    return "Steel Trading & Supply"
+  if (section.includes("كشخة الزين") || section.includes("beauty")) {
+    return "Fashion & Retail"
   }
-  if (section.includes("ابن الاسطى") || section.includes("craftsman")) {
-    return "Automotive Services"
-  }
-  if (section.includes("الوكيل") || section.includes("agent")) {
-    return "Automotive Services"
-  }
-  if (section.includes("تيستي") || section.includes("tasty")) {
-    return "Food & Beverage"
+  if (section.includes("كينج وود") || section.includes("king wood")) {
+    return "Wood Manufacturing"
   }
   if (section.includes("ماستر") || section.includes("master") || section.includes("اسنان") || section.includes("dental")) {
     return "Healthcare & Medical Services"
   }
-  
+  if (section.includes("مكة") || section.includes("makkah")) {
+    return "Kitchen Manufacturing"
+  }
+  if (section.includes("ووديكس") || section.includes("woodex")) {
+    return "Kitchen Materials & Supplies"
+  }
+  if (section.includes("ابو سعد") || section.includes("أبو سعد") || section.includes("بو سعد")) {
+    return "Export & International Transport"
+  }
+  if (section.includes("اتقان المريد") || section.includes("perfection seeking")) {
+    return "Islamic Education"
+  }
+  if (section.includes("الاخوة المتحدون") || section.includes("united brothers")) {
+    return "Kitchen Manufacturing"
+  }
+  if (section.includes("العلا") || section.includes("al ola") || section.includes("al-ola") || section.includes("el-ola")) {
+    return "Export & International Transport"
+  }
+  if (section.includes("تيستي") || section.includes("tasty")) {
+    return "Food & Beverage"
+  }
+  if (section.includes("رضوان") || section.includes("radwan")) {
+    return "Furniture Manufacturing"
+  }
+  if (section.includes("هاي براند") || section.includes("high brand")) {
+    return "Clothing Manufacturing"
+  }
+  if (section.includes("i brand") || section.includes("ibrand")) {
+    return "Marketing & Advertising"
+  }
 
   return "Other"
 }
 const getCategoryAr = (sectionTitle: string): string => {
   const section = sectionTitle.toLowerCase()
 
-  if (section.includes("ابو سعد") || section.includes("أبو سعد") || section.includes("بو سعد")) {
-    return " التصدير والنقل الدولي"
+  if (section.includes("ابن الاسطى") || section.includes("craftsman")) {
+    return "خدمات السيارات"
   }
-  if (section.includes("الانجاز المعتمد") || section.includes("الإنجاز المعتمد")) {
-    return "خدمات تخليص المعاملات وتأسيس الشركات"
+  if (section.includes("الجزار") || section.includes("butcher")) {
+    return "تجارة وتوريد الحديد"
   }
-  if (section.includes("العلا") || section.includes("al ola") || section.includes("al-ola") || section.includes("el-ola")) {
-    return "التصدير والنقل الدولي"
+  if (section.includes("الحبشي") || section.includes("habashy")) {
+    return "صناعة الأثاث"
   }
-  if (section.includes("رضوان") || section.includes("radwan") || section.includes("الحبشي") || section.includes("habashy")) {
-    return "الأثاث والتصميم الداخلي"
+  if (section.includes("الإنجاز المعتمد") || section.includes("النجاز المعتمد")) {
+    return "خدمات الأعمال"
   }
-  if (section.includes("كينج وود") || section.includes("king wood") || section.includes("ووديكس") || section.includes("woodex")) {
-    return "الأثاث وتوريد الأخشاب"
+  if (section.includes("الوكيل") || section.includes("agent")) {
+    return "خدمات السيارات"
   }
-  if (section.includes("هاي براند") || section.includes("high brand")) {
-    return "صناعة الملابس والأزياء"
-  }
-  if (section.includes("كشخة الزين") || section.includes("beauty")) {
-    return "بيع الأزياء والتجزئة"
-  }
-  if (section.includes("الاخوة المتحدون") || section.includes("united brothers") || section.includes("مكة") || section.includes("makkah")) {
-    return "صناعة وتصميم المطابخ"
-  }
-  if (section.includes("اتقان المريد") || section.includes("perfection seeking") || section.includes("بداية مشوارك") || section.includes("journey")) {
-    return "التعليم والتدريب"
+  if (section.includes("بداية مشوارك") || section.includes("journey")) {
+    return "التعليم الخاص"
   }
   if (section.includes("ترحال") || section.includes("travel") || section.includes("tr7al")) {
     return "السياحة والسفر"
@@ -436,20 +389,44 @@ const getCategoryAr = (sectionTitle: string): string => {
   if (section.includes("عسل") || section.includes("honey")) {
     return "التسويق العقاري"
   }
-  if (section.includes("الجزار") || section.includes("butcher")) {
-    return "تجارة وتوريد الحديد"
+  if (section.includes("كشخة الزين") || section.includes("beauty")) {
+    return "الأزياء والتجزئة"
   }
-  if (section.includes("ابن الاسطى") || section.includes("craftsman")) {
-    return "خدمات السيارات"
+  if (section.includes("كينج وود") || section.includes("king wood")) {
+    return "صناعة الأخشاب"
   }
-  if (section.includes("الوكيل") || section.includes("agent")) {
-    return "خدمات السيارات"
+  if (section.includes("ماستر") || section.includes("master") || section.includes("اسنان") || section.includes("dental")) {
+    return "الرعاية الصحية والخدمات الطبية"
+  }
+  if (section.includes("مكة") || section.includes("makkah")) {
+    return "صناعة المطابخ"
+  }
+  if (section.includes("ووديكس") || section.includes("woodex")) {
+    return "خامات ومستلزمات المطابخ"
+  }
+  if (section.includes("ابو سعد") || section.includes("أبو سعد") || section.includes("بو سعد")) {
+    return "التصدير والنقل الدولي"
+  }
+  if (section.includes("اتقان المريد") || section.includes("perfection seeking")) {
+    return "التعليم الإسلامي"
+  }
+  if (section.includes("الاخوة المتحدون") || section.includes("united brothers")) {
+    return "صناعة المطابخ"
+  }
+  if (section.includes("العلا") || section.includes("al ola") || section.includes("al-ola") || section.includes("el-ola")) {
+    return "التصدير والنقل الدولي"
   }
   if (section.includes("تيستي") || section.includes("tasty")) {
     return "الطعام والمشروبات"
   }
-  if (section.includes("ماستر") || section.includes("master") || section.includes("اسنان") || section.includes("dental")) {
-    return "الرعاية الصحية والخدمات الطبية"
+  if (section.includes("رضوان") || section.includes("radwan")) {
+    return "صناعة الأثاث"
+  }
+  if (section.includes("هاي براند") || section.includes("high brand")) {
+    return "صناعة الملابس"
+  }
+  if (section.includes("i brand") || section.includes("ibrand")) {
+    return "التسويق والإعلان"
   }
 
   return "أخرى"
